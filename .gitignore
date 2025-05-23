@@ -1,0 +1,20 @@
+# Direktori Terraform yang berisi modul dan provider hasil download
+.terraform/
+
+# File state Terraform (berisi data sensitif)
+terraform.tfstate
+terraform.tfstate.backup
+
+# File crash log Terraform
+crash.log
+
+# File override yang biasanya lokal
+override.tf
+override.tf.json
+
+# File variable yang berisi data sensitif (misal: password, API key)
+*.tfvars
+
+# File konfigurasi CLI Terraform (jika ada)
+.terraformrc
+terraform.rc
