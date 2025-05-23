@@ -4,6 +4,7 @@
 # File state Terraform (berisi data sensitif)
 terraform.tfstate
 terraform.tfstate.backup
+*.tfstate.back*
 
 # File crash log Terraform
 crash.log
