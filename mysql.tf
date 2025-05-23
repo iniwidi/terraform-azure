@@ -22,7 +22,8 @@ resource "azurerm_mysql_flexible_server" "mysql" {
 #  depends_on = [azurerm_subnet_network_security_group_association.nsg_assoc]
 depends_on = [
   azurerm_subnet.subnet,
-  azurerm_subnet_network_security_group_association.nsg_assoc
+  azurerm_subnet_network_security_group_association.nsg_assoc,
+  time_sleep.wait_for_dns_link
 ]
 
   tags = {
